@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lachlan Gray</title>
+<meta name="description" content="Lachlan Gray — postdoctoral researcher, Munich Heart Alliance / TUM. X-chromosome inactivation, allele-specific expression, and single-cell genomics in cardiovascular biology.">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Lachlan Gray">
+<meta property="og:description" content="Postdoctoral researcher — X-chromosome inactivation and single-cell genomics in cardiovascular biology.">
+
+<style>
+  :root{
+    --bg:#fbfaf8;
+    --surface:#ffffff;
+    --text:#1c1b19;
+    --muted:#5f5c57;
+    --faint:#8b877f;
+    --rule:#e3dfd8;
+    --accent:#8a3324;
+    --accent-soft:#f2e8e4;
+    --max:46rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#15161a;
+      --surface:#1c1e23;
+      --text:#e8e6e1;
+      --muted:#a6a29a;
+      --faint:#7b776f;
+      --rule:#2c2f36;
+      --accent:#e08a6e;
+      --accent-soft:#2a211e;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#15161a;
+    --surface:#1c1e23;
+    --text:#e8e6e1;
+    --muted:#a6a29a;
+    --faint:#7b776f;
+    --rule:#2c2f36;
+    --accent:#e08a6e;
+    --accent-soft:#2a211e;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    font-size:1.0625rem;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:4.5rem 1.5rem 6rem}
+  @media (max-width:34rem){ .wrap{padding:2.75rem 1.25rem 4rem} }
+
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:currentColor}
+
+  /* ---------- Header ---------- */
+  header{margin-bottom:3rem}
+  h1{
+    font-size:2.35rem;
+    line-height:1.1;
+    margin:0 0 .5rem;
+    letter-spacing:-.015em;
+    font-weight:600;
+  }
+  .tagline{
+    margin:0;
+    color:var(--muted);
+    font-size:1.05rem;
+  }
+  .tagline .sep{color:var(--faint);padding:0 .35rem}
+
+  /* ---------- Sections ---------- */
+  section{margin-top:3rem}
+  h2{
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:.72rem;
+    font-weight:650;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--faint);
+    margin:0 0 1.15rem;
+    padding-bottom:.55rem;
+    border-bottom:1px solid var(--rule);
+  }
+  p{margin:0 0 1.05rem}
+  p:last-child{margin-bottom:0}
+
+  /* ---------- Publications ---------- */
+  .pubs{list-style:none;margin:0;padding:0}
+  .pubs li{
+    padding:1.05rem 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .pubs li:first-child{padding-top:0}
+  .pubs li:last-child{border-bottom:0;padding-bottom:0}
+  .pub-title{
+    display:block;
+    font-weight:600;
+    color:var(--text);
+    margin-bottom:.3rem;
+    line-height:1.4;
+  }
+  a.pub-title:hover{color:var(--accent);border-bottom-color:transparent}
+  .pub-meta{
+    display:block;
+    font-size:.94rem;
+    color:var(--muted);
+    line-height:1.5;
+  }
+  .pub-meta em{font-style:italic}
+  .me{
+    border-bottom:2px solid var(--accent-soft);
+    font-weight:600;
+    color:var(--text);
+  }
+  .pub-links{
+    margin-top:.4rem;
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:.78rem;
+    letter-spacing:.02em;
+  }
+  .pub-links a{
+    display:inline-block;
+    margin-right:.75rem;
+    padding:.12rem .5rem;
+    border:1px solid var(--rule);
+    border-radius:3px;
+    color:var(--muted);
+  }
+  .pub-links a:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ---------- Contact ---------- */
+  .links{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns:5.5rem 1fr;
+    gap:.55rem 0;
+    align-items:baseline;
+  }
+  .links li{display:contents}
+  .links .label{
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:.7rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--faint);
+  }
+  .links .val{font-size:.98rem}
+
+  footer{
+    margin-top:4rem;
+    padding-top:1.25rem;
+    border-top:1px solid var(--rule);
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:.78rem;
+    color:var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Lachlan Gray</h1>
+    <p class="tagline">
+      Postdoctoral Researcher<span class="sep">·</span>Munich Heart Alliance (DZHK)<span class="sep">·</span>Technical University of Munich
+    </p>
+  </header>
+
+  <section id="about">
+    <h2>Research</h2>
+    <p>
+      I study how X-chromosome inactivation breaks down with age and disease, and what that means for
+      the sex differences we see in cardiovascular biology. Most of my work is computational: allele-specific
+      expression from single-nucleus RNA-seq, hierarchical models of allelic ratio variability, and the
+      statistical machinery needed to tell real epigenetic drift apart from technical noise in sparse
+      single-cell data.
+    </p>
+    <p>
+      My current project uses BL6&#215;CAST F1 hybrid mice to trace XCI erosion across cardiac cell types
+      through aging and cardiac stress. The picture emerging is less a uniform loss of silencing than a
+      widening of cell-to-cell variability &mdash; individual cells drifting apart rather than the whole
+      population shifting together.
+    </p>
+    <p>
+      Before Munich I worked in Sydney, where I came to the X chromosome from the other direction &mdash;
+      transcriptional signatures of X-linked gene dosage in autoimmunity &mdash; after earlier work on
+      circular RNA in the brain. I work mostly in R and Python on HPC, and I care about analysis
+      someone else can actually re-run.
+    </p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul class="pubs">
+
+      <!-- ============================================================
+           TO ADD A PAPER: copy one <li> block and edit it.
+           Wrap your own name in <span class="me">...</span>
+           Delete any link chip you don't have.
+           ============================================================ -->
+
+      <li>
+        <a class="pub-title" href="https://doi.org/10.1186/s41927-026-00669-1">
+          Machine learning reveals X chromosome transcriptional signatures that classify
+          systemic lupus erythematosus in females
+        </a>
+        <span class="pub-meta">
+          <span class="me">Gray LG</span>, Telfser A, Hu H, Kane A, Deenick EK, Phan TG, Ballouz S.
+          <em>BMC Rheumatology</em>, 2026.
+        </span>
+        <span class="pub-links">
+          <a href="https://doi.org/10.1186/s41927-026-00669-1">DOI</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/42381053/">PubMed</a>
+        </span>
+      </li>
+
+      <li>
+        <a class="pub-title" href="https://doi.org/10.1016/j.ygeno.2020.09.042">
+          Cell type-specific circular RNA expression in human glial cells
+        </a>
+        <span class="pub-meta">
+          Curry-Hyde A, <span class="me">Gray LG</span>, Chen BJ, Ueberham U, Arendt T, Janitz M.
+          <em>Genomics</em>, 2020.
+        </span>
+        <span class="pub-links">
+          <a href="https://doi.org/10.1016/j.ygeno.2020.09.042">DOI</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/32966858/">PubMed</a>
+        </span>
+      </li>
+
+      <li>
+        <a class="pub-title" href="https://doi.org/10.3389/fgene.2020.564301">
+          Identification of specific circular RNA expression patterns and microRNA interaction
+          networks in mesial temporal lobe epilepsy
+        </a>
+        <span class="pub-meta">
+          <span class="me">Gray LG</span>, Mills JD, Curry-Hyde A, Devore S, Friedman D, Thom M,
+          Scott C, Thijs RD, Aronica E, Devinsky O, Janitz M.
+          <em>Frontiers in Genetics</em>, 2020.
+        </span>
+        <span class="pub-links">
+          <a href="https://doi.org/10.3389/fgene.2020.564301">DOI</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33101384/">PubMed</a>
+        </span>
+      </li>
+
+      <li>
+        <a class="pub-title" href="https://doi.org/10.1016/j.ygeno.2018.11.019">
+          Early transcriptome changes in response to chemical long-term potentiation induced via
+          activation of synaptic NMDA receptors in mouse hippocampal neurons
+        </a>
+        <span class="pub-meta">
+          Bliim N, Leshchyns'ka I, Keable R, Chen BJ, Curry-Hyde A, <span class="me">Gray L</span>,
+          Sytnyk V, Janitz M.
+          <em>Genomics</em>, 2019.
+        </span>
+        <span class="pub-links">
+          <a href="https://doi.org/10.1016/j.ygeno.2018.11.019">DOI</a>
+        </span>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Elsewhere</h2>
+    <ul class="links">
+      <li><span class="label">Email</span><span class="val"><a href="mailto:YOUR-WORK-EMAIL">your.name@tum.de</a></span></li>
+      <li><span class="label">ORCID</span><span class="val"><a href="https://orcid.org/0000-0002-2131-2850">0000-0002-2131-2850</a></span></li>
+      <li><span class="label">Scholar</span><span class="val"><a href="PUT-SCHOLAR-URL-HERE">Google Scholar</a></span></li>
+      <li><span class="label">GitHub</span><span class="val"><a href="https://github.com/YOUR-USERNAME">@YOUR-USERNAME</a></span></li>
+      <li><span class="label">Bluesky</span><span class="val"><a href="PUT-BLUESKY-URL-HERE">@handle</a></span></li>
+    </ul>
+  </section>
+
+  <footer>
+    Last updated September 2026.
+  </footer>
+
+</div>
+</body>
+</html>
